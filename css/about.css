@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/* Style rules for body and images */
+body{
+    display: block;
+	background-color: rgb(146, 146, 146);
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    height: 100%;
+}
+
+img, video {
+	max-width: 100%;
+	display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+/* mobile navigation styles */
+
+nav {
+    padding:1%;
+}
+
+.mobile-nav a {
+    color: #000;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+ }
+ .mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    right: 0;
+    top: 0; 
+}
+
+ .menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+}
+
+#nav-container-tab-desk, #menu-links {
+    display: none;
+}
+
+header img {
+	/* height: 100px; */
+    width: 90px;
+    object-fit: contain;
+    
+}
+
+/* styling the hero image */
+.image-container{
+    background-color: rgb(146, 146, 146);
+}
+
+/* logo image */
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* styling for the hero image of styles.html */
+#hero img {
+    height: 590px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* style rules for about page */
+.banner {
+    max-width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Guarantee Section Styles */
+.guarantee-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.guarantee-section p {
+    color: #333;
+}
+
+.guarantee-section strong {
+    color: #e44d26;
+}
+
+/* Featured Products Section Styles */
+.featured-products-section {
+    background-color: #e44d26;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.featured-products-section h2 {
+    color: #fff;
+}
+
+.featured-products-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-products-section li {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+     /* Tablet Viewport: Style rule for nav area */
+     #nav-container-tab-desk{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 5%;
+        background-color: rgb(226,227,233);
+        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    nav {
+        padding:1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        /* text-align: right; */
+    }
+    
+    nav li {
+        display: inline-block;
+        font-size: 0.80em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        display: block;
+        color: #100f0f;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+
+     .mobile-nav {
+        display: none;
+     }
+}
+
+/* Media Query for Desktop Viewport.  */
+@media screen and (min-width: 769px){
+    /* Desktop Viewport: Style rules for nav area.  */
+    nav li{
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover{
+        color: #373684;
+        transform: scale(1.2);
+    }
+}
+
+/* Media Query for Print. */
+@media print{
+	body{
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+
+/* style rules for footer content */
+footer{
+    color: #fdfbfb;
+    padding: 5px;
+    background-color: #090909;
+}
+footer p {
+	font-size: 0.5em;
+	text-align: center;
+    height: 10%;
+    margin-top: 1px;
+}
+
+footer p a {
+    color: #ffffff;
+	text-decoration: none;
+}
